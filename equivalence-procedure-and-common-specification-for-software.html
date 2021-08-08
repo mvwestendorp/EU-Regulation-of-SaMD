@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Equivalence procedure and Common Specification for software | The regulation of medical devices involving software in the EU</title>
+  <meta name="description" content="6 Equivalence procedure and Common Specification for software | The regulation of medical devices involving software in the EU" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Equivalence procedure and Common Specification for software | The regulation of medical devices involving software in the EU" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Equivalence procedure and Common Specification for software | The regulation of medical devices involving software in the EU" />
+  
+  
+  
+
+<meta name="author" content="Mathijs van Westendorp" />
+
+
+<meta name="date" content="2021-08-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-Certificates-in-the.html"/>
+<link rel="next" href="conclusion.html"/>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="assets/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="assets/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="assets/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="software-artificial-intelligence-and-medical-devices.html"><a href="software-artificial-intelligence-and-medical-devices.html"><i class="fa fa-check"></i><b>2</b> Software, Artificial Intelligence and Medical Devices</a><ul>
+<li class="chapter" data-level="2.1" data-path="software-artificial-intelligence-and-medical-devices.html"><a href="software-artificial-intelligence-and-medical-devices.html#medical-devices-and-software"><i class="fa fa-check"></i><b>2.1</b> Medical devices and software</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="software-artificial-intelligence-and-medical-devices.html"><a href="software-artificial-intelligence-and-medical-devices.html#software-medical-devices-under-the-medical-device-directive"><i class="fa fa-check"></i><b>2.1.1</b> Software &amp; medical devices under the Medical Device Directive</a></li>
+<li class="chapter" data-level="2.1.2" data-path="software-artificial-intelligence-and-medical-devices.html"><a href="software-artificial-intelligence-and-medical-devices.html#software-medical-devices-under-the-medical-device-regulation"><i class="fa fa-check"></i><b>2.1.2</b> Software &amp; medical devices under the Medical Device Regulation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="software-artificial-intelligence-and-medical-devices.html"><a href="software-artificial-intelligence-and-medical-devices.html#intended-medical-purpose-of-software"><i class="fa fa-check"></i><b>2.2</b> Intended medical purpose of software</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sec-Classification-of-medical.html"><a href="sec-Classification-of-medical.html"><i class="fa fa-check"></i><b>3</b> Classification of medical device software</a><ul>
+<li class="chapter" data-level="3.1" data-path="sec-Classification-of-medical.html"><a href="sec-Classification-of-medical.html#classification-based-on-risk"><i class="fa fa-check"></i><b>3.1</b> Classification based on risk</a></li>
+<li class="chapter" data-level="3.2" data-path="sec-Classification-of-medical.html"><a href="sec-Classification-of-medical.html#hardware-vs-software-based-classification"><i class="fa fa-check"></i><b>3.2</b> Hardware vs software based classification</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="sec-Classification-of-medical.html"><a href="sec-Classification-of-medical.html#medical-device-directive"><i class="fa fa-check"></i><b>3.2.1</b> Medical device directive</a></li>
+<li class="chapter" data-level="3.2.2" data-path="sec-Classification-of-medical.html"><a href="sec-Classification-of-medical.html#medical-device-regulation"><i class="fa fa-check"></i><b>3.2.2</b> Medical device regulation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="sec-Classification-of-medical.html"><a href="sec-Classification-of-medical.html#classifying-software"><i class="fa fa-check"></i><b>3.3</b> Classifying software</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="requirements-for-the-different-classes-of-software.html"><a href="requirements-for-the-different-classes-of-software.html"><i class="fa fa-check"></i><b>4</b> Requirements for the different classes of software</a><ul>
+<li class="chapter" data-level="4.1" data-path="requirements-for-the-different-classes-of-software.html"><a href="requirements-for-the-different-classes-of-software.html#requirements-per-class"><i class="fa fa-check"></i><b>4.1</b> Requirements per class</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="requirements-for-the-different-classes-of-software.html"><a href="requirements-for-the-different-classes-of-software.html#class-i"><i class="fa fa-check"></i><b>4.1.1</b> Class I</a></li>
+<li class="chapter" data-level="4.1.2" data-path="requirements-for-the-different-classes-of-software.html"><a href="requirements-for-the-different-classes-of-software.html#class-iia"><i class="fa fa-check"></i><b>4.1.2</b> Class IIa</a></li>
+<li class="chapter" data-level="4.1.3" data-path="requirements-for-the-different-classes-of-software.html"><a href="requirements-for-the-different-classes-of-software.html#class-iib-iii"><i class="fa fa-check"></i><b>4.1.3</b> Class IIb-III</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="requirements-for-the-different-classes-of-software.html"><a href="requirements-for-the-different-classes-of-software.html#subsec:GSPR"><i class="fa fa-check"></i><b>4.2</b> General safety and performance requirements (GSPR)</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="requirements-for-the-different-classes-of-software.html"><a href="requirements-for-the-different-classes-of-software.html#safety-and-performance-of-software"><i class="fa fa-check"></i><b>4.2.1</b> Safety and performance of software</a></li>
+<li class="chapter" data-level="4.2.2" data-path="requirements-for-the-different-classes-of-software.html"><a href="requirements-for-the-different-classes-of-software.html#quality-management-for-software"><i class="fa fa-check"></i><b>4.2.2</b> Quality management for software</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sec-Certificates-in-the.html"><a href="sec-Certificates-in-the.html"><i class="fa fa-check"></i><b>5</b> Certificates in the Medical Device Regulation</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-Certificates-in-the.html"><a href="sec-Certificates-in-the.html#declaration-of-conformity"><i class="fa fa-check"></i><b>5.1</b> Declaration of conformity</a></li>
+<li class="chapter" data-level="5.2" data-path="sec-Certificates-in-the.html"><a href="sec-Certificates-in-the.html#eu-technical-documentation-assessment-certificate-td-certificate"><i class="fa fa-check"></i><b>5.2</b> EU technical documentation assessment certificate (TD-certificate)</a></li>
+<li class="chapter" data-level="5.3" data-path="sec-Certificates-in-the.html"><a href="sec-Certificates-in-the.html#eu-quality-management-system-certificate-qms-certificate"><i class="fa fa-check"></i><b>5.3</b> EU quality management system certificate (QMS-certificate)</a></li>
+<li class="chapter" data-level="5.4" data-path="sec-Certificates-in-the.html"><a href="sec-Certificates-in-the.html#subsec:Type-examination"><i class="fa fa-check"></i><b>5.4</b> EU Type-examination certificate (TE-certificate)</a></li>
+<li class="chapter" data-level="5.5" data-path="sec-Certificates-in-the.html"><a href="sec-Certificates-in-the.html#eu-quality-assurance-certificate-qa-certificate"><i class="fa fa-check"></i><b>5.5</b> EU quality assurance certificate (QA-certificate)</a></li>
+<li class="chapter" data-level="5.6" data-path="sec-Certificates-in-the.html"><a href="sec-Certificates-in-the.html#product-verification-certificate-pv-certificate"><i class="fa fa-check"></i><b>5.6</b> Product verification certificate (PV-certificate)</a></li>
+<li class="chapter" data-level="5.7" data-path="sec-Certificates-in-the.html"><a href="sec-Certificates-in-the.html#certificate-of-free-sale"><i class="fa fa-check"></i><b>5.7</b> Certificate of free sale</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="equivalence-procedure-and-common-specification-for-software.html"><a href="equivalence-procedure-and-common-specification-for-software.html"><i class="fa fa-check"></i><b>6</b> Equivalence procedure and Common Specification for software</a><ul>
+<li class="chapter" data-level="6.1" data-path="equivalence-procedure-and-common-specification-for-software.html"><a href="equivalence-procedure-and-common-specification-for-software.html#software-modification-and-the-equivalency-procedure"><i class="fa fa-check"></i><b>6.1</b> Software modification and the equivalency procedure</a></li>
+<li class="chapter" data-level="6.2" data-path="equivalence-procedure-and-common-specification-for-software.html"><a href="equivalence-procedure-and-common-specification-for-software.html#a-common-specification-or-future-amendments-for-ai"><i class="fa fa-check"></i><b>6.2</b> A Common Specification or future amendments for AI?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The regulation of medical devices involving software in the EU</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="equivalence-procedure-and-common-specification-for-software" class="section level1">
+<h1><span class="header-section-number">6</span> Equivalence procedure and Common Specification for software</h1>
+<p>Having discussed the classification and associated procedure for the initial approval, we will now detail the relevant requirements that software and manufacturers need to fulfil for products that are modified.</p>
+<div id="software-modification-and-the-equivalency-procedure" class="section level2">
+<h2><span class="header-section-number">6.1</span> Software modification and the equivalency procedure</h2>
+<p>As explained above, there is a distinction between the explicitly coded part of the algorithm and the resulting model. Also discussed before is the importance of software verification and validation, which is equally applicable to new/updated versions of software. Part of the QMS is aimed at handling modifications that aim to improve product quality. As the risk of modifications to a known quantity is generally lower compared to the risk of introducing a completely new product, the Regulation facilitates these modifications by reducing the requirements needed for approval of the new ‘version’ through the <em>equivalency procedure</em>.</p>
+<p>Compared to regular software there is a component of AI models that can change without explicit human ‘input’, i.e. (re)training the model. This specific characteristic of AI software leads to the question whether training a model on new data and/or with adaptations to the model code encompasses a modification and whether this is a minor or major change.</p>
+<p>A modification for a class IIb &amp; III device requires a clinical evaluation unless the notified body is satisfied <em>‘the device has been designed by modifying a device already marketed by the same manufacturer for the same intended purpose, provided that the manufacturer has demonstrated to the satisfaction of the notified body that the modifications do not adversely affect the benefit-risk ratio of the device<em>’.<a href="#fn167" class="footnote-ref" id="fnref167"><sup>167</sup></a> A device is ’</em>already marketed’</em> when it was approved under the Directive or the Regulation.<a href="#fn168" class="footnote-ref" id="fnref168"><sup>168</sup></a> For demonstrating equivalence, and thus be allowed to use existing clinical data for certification, the technical, biological and clinical characteristics of the devices are taken into account.<a href="#fn169" class="footnote-ref" id="fnref169"><sup>169</sup></a> As the biological aspects are not relevant and the clinical characteristics concern whether the device is used in the same clinical condition and purpose, the technical characteristics are important to consider for software.</p>
+<p>Looking at the technical characteristics in the Regulation, the crux is in assessing whether the device is of ‘<em>similar design</em>’, which specifically mentions ‘software algorithms’ as one of its properties.<a href="#fn170" class="footnote-ref" id="fnref170"><sup>170</sup></a> This includes both software (algorithms) driving a device or when it is intended to be used alone.<a href="#fn171" class="footnote-ref" id="fnref171"><sup>171</sup></a> The requirement of similar design is less strict for software that is not related to any medical purpose, for example the software responsible for the graphical user interface, which merely requires that it is justifiable that it does not negatively affect the usability, safety or clinical performance of the device.<a href="#fn172" class="footnote-ref" id="fnref172"><sup>172</sup></a> The guidance document specifically mentions that it is not required to demonstrate the equivalence of software code in case the software has been developed according to international standards for safe design and validation.<a href="#fn173" class="footnote-ref" id="fnref173"><sup>173</sup></a> Supporting this is that only a new Unique Device Identifier Production Identifier (UDI-PI), not a new Unique Device Identifier Device Identifier (UDI-DI), is required for minor software revisions. Major software changes require a new UDI-DI when the modifications affect the original performance, safety of the software or the interpretation of data.<a href="#fn174" class="footnote-ref" id="fnref174"><sup>174</sup></a> These modifications include new or modified algorithms, database structures, operating platform, architecture or new user interfaces or new channels for interoperability.<a href="#fn175" class="footnote-ref" id="fnref175"><sup>175</sup></a></p>
+<p>Looking at machine learning models, modifying the software code describing the model itself is clearly covered under the Regulation similar to conventional software. Albeit that as small changes in the training algorithm could have substantial hard to predict consequences, it is prudent that these kind of changes require additional clinical evaluation unless their effect is justifiably small. The aforementioned does raise the question whether (re)training of the model modifies the algorithm or whether this is merely a minor software revision.</p>
+<p>Specifically looking at the wording of ‘software algorithm’, retraining does not seem to fall under that definition given that the software code is equivalent in such cases. An argument against that is that the (re)trained model that is used for inference is likely different from the model that was originally trained. Regardless of whether it should be considered as the same device or as a modified device, the crux here is again the validation and verification of the performance and robustness of this software. In (re)training using approximately equivalent data would detrimentally affect performance, this raises the questions whether the model was sufficiently robust to begin with.</p>
+<p>It is technically possible to automate parts of the verification software, which facilitates a bigger role for post-surveillance checks on data by ongoing verification of the performance of the algorithm. Although there is no reason to cut AI more slack in pre-approval evidence generation. If retraining is part of the plans for a device, manufacturers should make the necessary adaptations to their quality management system to ensure that this is possible without negatively impacting performance and with sufficient guarantees concerning robustness.</p>
+<p>There are opportunities for data generation and verification post-market by using the technical documentation and imploring the sharing of data as a regulatory requirement. The Medical Device Regulation encourages the establishment of clinical data registries,<span class="citation"><a href="#fn176" class="footnote-ref" id="fnref176"><sup>176</sup></a></span> which considering the importance of data for software and more specifically training AI models, offers further opportunity to use this data for improving medical devices. Using data from similar devices is possible even when it is not sufficient to demonstrate equivalence. It can then be used for ensuring the risk management system, the scope of the clinical evaluation through identification of special performance or safety concerns, provide information for the post-market surveillance system, identifying relevant clinical outcome parameters and minimal requirements for assessing a clinically relevant effect.<a href="#fn177" class="footnote-ref" id="fnref177"><sup>177</sup></a></p>
+<p>Evidently, there is a balance to be struck between the free sharing of data and the commercial interest of manufacturers in that data. Also, setting up registries does require an investment, which may not materialise when the profitable to the investor inn setting up the registry is uncertain. Given that the EUDAMED database is yet to be implemented with the first module on actor registration planned for December 2021, it is clear that there are still technical barriers to the creation of a system where these heterogeneous data are easily shared.</p>
+</div>
+<div id="a-common-specification-or-future-amendments-for-ai" class="section level2">
+<h2><span class="header-section-number">6.2</span> A Common Specification or future amendments for AI?</h2>
+<p>There seems to be a general anticipation that the development of AI and machine learning will have major implications for regulatory frameworks. Specifically for medical devices, it has been stated that further amendments to the regulatory framework and guidelines for medical devices are required in the near future in light of advances in AI and machine learning.<a href="#fn178" class="footnote-ref" id="fnref178"><sup>178</sup></a> While we concur that more regulatory clarity concerning these technologies is warranted, it is unclear what the specific advances are that required addressing in regulatory amendments. Therefore, we present our view based on the perspective on AI as software that we have taken in this article.</p>
+<p>In our analysis we have seen that the crux in regulating software in medical devices is the validation aspect. The question is whether the degree to which AI models can be validated is compliant with the regulatory requirements concerning robustness and efficacy in line with the benefit-risk of such software in medical devices. As such, there is a need for further technical guidelines. Whereas the necessity for further legal guidance is clear concerning software in general, it is not evident that AI or machine learning require a special treatment in the near future.</p>
+<p>Given that the framework already delineates the requirements to which medical devices, software and consequently also AI have to conform, we argue that there is no evident need for legal interventions concerning those requirements specifically for AI models. We have yet to see a compelling argument that AI requires a total rethinking of the principles that are used to regulate medical devices nor that there are characteristics of AI up and beyond software that require special considerations.</p>
+<p>While there is a potential for failure when AI models are retrained on new data and put into production unchecked, this is no different from other QA/QMS issues that can arise in software and even in traditional hardware devices. If new versions of software are pushed without validation or a new production process or material is used for a device, there is a need for a level of reassessment depending on the degree of the change and the risk that it entails. This make clear that the changes that are possible within the context of a validated product depend on the technical ability to perform the verification and validation of those changes in light of the requirements given by the applicable Regulations.</p>
+<p>Software has a potential for faster, iterative, development and deployment. Verification is part of that process (CI &amp; CD). However, validation remains a concern. For AI, the lack of feature engineering, or the difference between explicit features and inference leads to difficulties in guaranteeing robustness. However, the regulatory requirements are clear that this robustness needs to be validated. Common specification is an instrument that can be used to state what the state of the art of verification and validation in relation to different AI models is.</p>
+<p>AI models are too heterogeneous to come up with an exhaustive at this time and a topic that is continuously developing at a rapid pace. However, the Commission may create a common specification,<span class="citation"><a href="#fn179" class="footnote-ref" id="fnref179"><sup>179</sup></a></span> which is an interesting option for regulating machine learning. While heterogeneity of the models can cause issues in creating a <em>common</em> specification, we do like to make some general suggestions for some important elements that this common specification should address.</p>
+<ul>
+<li><p>The TD-certificate needs to contain detailed information on the design of a device. Applying this to AI models there should be an explanation of inner workings understandable by an expert in the field.</p></li>
+<li><p>It should delineate standards for those elements in developing a model that are specific to AI. This includes the certain standard in the way that the data is prepared and handled. The standard needs to guarantee that when a dataset is split into different parts to be used for training, testing and validation that these are accidentally or<a href="#fn180" class="footnote-ref" id="fnref180"><sup>180</sup></a></p></li>
+<li><p>There should be standards for accuracy and robustness. Preferably these are verifiable by the notified bodies or other external parties.</p></li>
+<li><p>Clarification on how to deal with retraining. Either by having a QMS system that can deal with the variability introduced by retraining or by treating it as a modification of the device and apply the respective provisions in the Regulation to that change.</p></li>
+</ul>
+<p>At this time, we argue that while software, specifically AI models, may be more complex or technically challenging, but this is not something for which the regulatory route is the best approach. Instead, using medical devices that involve software such as AI requires further developments in software validations in general and validation of AI models in particular.</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="167">
+<li id="fn167"><p>Art 54(2)(b) <span class="citation">ibid</span><a href="equivalence-procedure-and-common-specification-for-software.html#fnref167" class="footnote-back">↩︎</a></p></li>
+<li id="fn168"><p><span class="citation">MDCG, ‘Interpretation of Article 54(2)b Rev 1’ (2020) 2019-3 &lt;<a href="https://ec.europa.eu/docsroom/documents/40661" role="doc-biblioref">https://ec.europa.eu/docsroom/documents/40661</a>&gt;</span><a href="equivalence-procedure-and-common-specification-for-software.html#fnref168" class="footnote-back">↩︎</a></p></li>
+<li id="fn169"><p>Annex XIV, part A, 3 <span class="citation">‘REGULATION (EU) 2017/745 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 5 April 2017 on Medical Devices, Amending Directive 2001/83/EC, Regulation (EC) No 178/2002 and Regulation (EC) No 1223/2009 and Repealing Council Directives 90/385/EEC and 93/42/EEC’ (n 28)</span><a href="equivalence-procedure-and-common-specification-for-software.html#fnref169" class="footnote-back">↩︎</a></p></li>
+<li id="fn170"><p>Annex XIV, part A, 3 <span class="citation">ibid</span><a href="equivalence-procedure-and-common-specification-for-software.html#fnref170" class="footnote-back">↩︎</a></p></li>
+<li id="fn171"><p><span class="citation">MDCG, ‘Clinical Evaluation - Equivalence. A Guide for Manufacturers and Notified Bodies’ (2020) 2020-5</span> 6<a href="equivalence-procedure-and-common-specification-for-software.html#fnref171" class="footnote-back">↩︎</a></p></li>
+<li id="fn172"><p><span class="citation">ibid</span> 6<a href="equivalence-procedure-and-common-specification-for-software.html#fnref172" class="footnote-back">↩︎</a></p></li>
+<li id="fn173"><p><span class="citation">ibid</span> 6<a href="equivalence-procedure-and-common-specification-for-software.html#fnref173" class="footnote-back">↩︎</a></p></li>
+<li id="fn174"><p>Annex VI Part C, 6.5.2 <span class="citation">‘REGULATION (EU) 2017/745 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 5 April 2017 on Medical Devices, Amending Directive 2001/83/EC, Regulation (EC) No 178/2002 and Regulation (EC) No 1223/2009 and Repealing Council Directives 90/385/EEC and 93/42/EEC’ (n 28)</span><a href="equivalence-procedure-and-common-specification-for-software.html#fnref174" class="footnote-back">↩︎</a></p></li>
+<li id="fn175"><p>Annex VI part C, 6.5.3 <span class="citation">ibid</span><a href="equivalence-procedure-and-common-specification-for-software.html#fnref175" class="footnote-back">↩︎</a></p></li>
+<li id="fn176"><p>Art 108 ibid.<a href="equivalence-procedure-and-common-specification-for-software.html#fnref176" class="footnote-back">↩︎</a></p></li>
+<li id="fn177"><p><span class="citation">MDCG, ‘Clinical Evaluation - Equivalence. A Guide for Manufacturers and Notified Bodies’ (n <span class="first-reference-note-number" refid="mdcgClinicalEvaluationEquivalence2020">0</span>)</span> 14<a href="equivalence-procedure-and-common-specification-for-software.html#fnref177" class="footnote-back">↩︎</a></p></li>
+<li id="fn178"><p><span class="citation">Minssen, Mimler and Mak, (n 7)</span><a href="equivalence-procedure-and-common-specification-for-software.html#fnref178" class="footnote-back">↩︎</a></p></li>
+<li id="fn179"><p>Art 54(2)(b) jo. art 9 ‘REGULATION (EU) 2017/745 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 5 April 2017 on Medical Devices, Amending Directive 2001/83/EC, Regulation (EC) No 178/2002 and Regulation (EC) No 1223/2009 and Repealing Council Directives 90/385/EEC and 93/42/EEC’ (n 28).<a href="equivalence-procedure-and-common-specification-for-software.html#fnref179" class="footnote-back">↩︎</a></p></li>
+<li id="fn180"><p>For example indicate whether the different parts of the dataset (training, test and validation) should be standardised separately or as a whole.<a href="equivalence-procedure-and-common-specification-for-software.html#fnref180" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-Certificates-in-the.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["samd-article.pdf", "samd-article.epub"],
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "static"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
