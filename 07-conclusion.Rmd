@@ -1,0 +1,57 @@
+# Conclusion
+
+We have given a definition of software and presented the view that AI and machine learning are subsets of software. Based on the relationship between different models, there is a distinction to be made between an AI algorithm that determines the model and the resulting model. Using machine learning terminology, there is a distinction between the algorithm used for training and the model used for inference.
+
+As the applicable regulatory framework and case law make clear, whether software is a medical device within the scope of the Medical Device Directive or Regulation depends on the medical purpose that it has. If within that scope, software is classified using distinct classifications paradigms under the Directive compared to the Regulation. The classification under the Directive is based on the class of the hardware whereas the newly introduced classifications rules for software in the Regulation considered in light of the guidance published by the MDGC changed to software-based approach. Under the Regulation the class of software is the primary factor that determines the class of a device irrespective of whether the software is part of a hardware medical device or software as a medical device.
+
+Determining whether software is within the scope of the Regulation has become more important given that the consequences are more substantial. Whereas under the Directive, the manufacturer would need to declare conformity with the requirements in the Directive give most software is in class I. While a prudent software manufacturer would most likely meet these requirements meaning that it is merely an issue of not declaring conformity. Under the Directive this would result in a formal error in the sense that the declaration procedure was not followed but should not lead to material differences.
+
+Under the Regulation, a notified body would have to be involved for every product within the scope of the Regulation, and thus, for any software that is considered to be a medical device. This means that if a manufacturer is mistaken on whether a software has an intended medical purpose, then it is a noncompliance with the Regulation as a result of a material insufficiency given that the necessary certificates would not have been issued for the device. Therefore, the classification of software under the Regulation if using the guidance documents by the MDCG is not desirable in light of the overarching classification principle, which is based on benefit-risk of a device. Therefore, classification based on the implementation when this has no implications for the benefits or risks of a device could have the undesirable effect that technical choices are guided by the regulatory classification.
+
+The crux in regulating software, including AI, is the validation and verification. Evidently this is challenging for complex product, more so when there are concerns of the robustness of the performance of AI models and when these models are applied in medical context. Therefore, the ability to introduce medical devices that use AI or machine learning depends on the possibility to validate the efficacy, robustness and safety of such a device. This requires sufficient guarantees of the robustness and performance of these products. While suggestions are being made on that front,[^23] further research on the verification and validations of this type of software is essential to effectively regulate these products in a way that patients get access to the benefits of such products whilst guaranteeing their safety.
+
+[^1]: Reference to MYCIN (https://doi.org/10.1016%2F0025-5564%2875%2990047-4) and ECG articles (<https://www.nature.com/articles/s41591-018-0306-1>)
+
+[^2]: For example super human performance in Go and StarCraft.^[@silverMasteringGameGo2016; @vinyalsGrandmasterLevelStarCraft2019]
+
+[^3]: Although devices can be put into service under the Directive until 26th of May 2025.
+
+[^4]: While the MDCG does not state whether these instructions need to be for a computer, without this prerequisite, 'software' becomes too broad of a term traditionally non-software things would become software such as cooking recipes.^[@mdcgGuidanceQualificationClassification2019]
+
+[^5]: <http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-170921-samd-n41-clinical-evaluation_1.pdf>
+
+[^6]: This explicit mentioning of software was added by Directive 2007/47/EC of the European Parliament and of the Council of 5 September 2007.
+
+[^7]: The International Medical Device Regulators Forum has defined SaMD as: '*software intended to be used for one or more medical purposes that perform these purposes without being part of a hardware medical device*' in <http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-170921-samd-n41-clinical-evaluation_1.pdf>.
+
+[^8]: There are sub-classes within these categories (implantable, including medicinal product), but these are not that relevant for software.
+
+[^9]: See for example the ISO 14971 standard for more details on QMS for medical devices.
+
+[^10]: There is an exception for sterile class I products for which the involvement of a notified body is required.
+
+[^11]: MDCG rule 12 page 14.
+
+[^12]: These devices are '*classified as class IIa, except if such decisions have an impact that may cause: death or an irreversible deterioration of a person's state of health, in which case it is in class III; or a serious deterioration of a person's state of health or a surgical intervention, in which case it is classified as class IIb*'.^[Annex VIII, rule 11 @REGULATIONEU2017a]
+
+[^13]: There does not seem to be a realistic product where the software would have a IIa classification while the hardware component makes it a class IIb or III device.
+
+[^14]: Only the requirements in Annex I apply to devices that are manufactured and used within health institutions and the conditions mentioned in are met.
+
+[^15]: refers to '*a certificate pursuant to this Part of this Annex*' which according to is an '*EU quality assurance certificate*'.
+
+[^16]: refers to '*a certificate pursuant to this Part of this Annex*' which according to is an '*EU product verification certificate*'.
+
+[^17]: Using reasonably sized training, test and validation subsets.
+
+[^18]: I.e. the repeatability, reliability and performance in line with the intended use.
+
+[^19]: For example the ISO 14971 standard provides further guidance, although this is not within the scope of this article.
+
+[^20]: ISO/TR 80002-2:2017
+
+[^21]: Further details on this certificate are not within the scope of this article.
+
+[^22]: For example indicate whether the different parts of the dataset (training, test and validation) should be standardised separately or as a whole.
+
+[^23]: An example is to generate 'digital biomarkers' through causal inference methods [@sternRegulatoryOversightCausal2019a]

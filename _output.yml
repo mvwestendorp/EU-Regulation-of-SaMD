@@ -1,0 +1,12 @@
+bookdown::gitbook:
+  lib_dir: assets
+  split_by: chapter
+  split_bib: no
+  config:
+    toolbar:
+      position: static
+    download: [pdf, epub]
+bookdown::pdf_book:
+  keep_tex: yes
+bookdown::html_book:
+  css: toc.css

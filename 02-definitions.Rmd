@@ -1,0 +1,88 @@
+
+# Software, Artificial Intelligence and Medical Devices
+
+Before looking into the definition of a medical device, we first need to establish what software is and how it is defined. Next a definition of AI is discussed. This allows to show the relationship between software and AI, which is relevant for the applicability of the regulatory framework to the latter. While both the Directive and the Regulation use software in the definition of a medical device, the definition of software itself is neither in the Directive nor Regulation. Therefore, we first introduce two related terms relevant to software and AI, namely models and algorithms.
+
+#### Models, algorithms and software {-}
+
+The first distinction that we make is between a model and an algorithm. A model describes a system and an algorithm does something in a model or system.
+
+Concerning models, we further identify two different models: a conceptual model and mathematical model. A conceptual model is a representation of a system, made of the composition of concepts which are used to help people know, understand, or simulate a subject the model represents.^[@wikipediaConceptualModel] A mathematical model is a description of a system using mathematical concepts and language.^[@wikipediaMathematicalModel] Typically, defining a mathematical model is part of the development of an algorithm.
+
+An algorithm is defined as '*a finite sequence of well-defined computer-implementable instructions*'.^[@wikipediaAlgorithm] Algorithms are closely related to software as the definition of software is that the latter are '*the instructions that control what a computer* *does*'.^[@cambridgedictionarySoftware] Because software is used in a medical device context, the definition used by the Medical Device Coordination Group (MDCG) in the guidance document on the classification of software is slightly different, where it defines software as '*a set of instructions that processes input data and creates output data*'.[^4]
+
+What follows from these definitions is that algorithms are instructions that are computer-implementable, where the algorithm is based on, and the algorithm itself forms, a mathematical model. Given that software are instructions for a computer, that software are algorithms that are implemented on a computer, the software itself forms a mathematical model. This means that software are instructions for a solution to a real world problem through implementing a model that aims to represent system in which the actual problem is encountered.
+
+#### Artificial Intelligence {-}
+
+One of the difficulties of discussing AI is that there is no well defined definition of 'Artificial Intelligence' (AI). The debate thereon and the related definition of 'intelligence', besides being complex, is not actually that important for its understanding.^[@pfeiferUnderstandingIntelligence1999a 5] AI as defined by John McCarthy Artificial Intelligence is the study of intelligent agents which are defined as '*any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goal*'.^[@mccarthyWhatArtificialIntelligence2007b] Or that AI are *'methods capable of rational and autonomous reasoning, action or decision making, and/or adaptation to complex environment, and to previously unseen circumstances'.*[@russellArtificialIntelligenceModern2010c] Such a device can consist of a mathematical model that uses data from the environment as input to, through a mathematical procedure (i.e. an algorithm) that decides upon the procedure which maximises the statistical probability that the device achieves its set goal. While such agents are not necessarily implemented in software, it is a *de facto* requirement when complexity increases beyond the trivial.
+
+Even though deep learning has made AI popular by a high performance in some specific use-cases, AI is more than just the deep learning or neural networks as it encompasses any algorithm or software that optimises its success in an environment. In fact, deep learning is a subset of machine learning, which, in turn, is a subset of AI.
+
+The relation between the different concepts that are discussed in this section are given by the following formula.
+
+$$ML\subseteq AI\subseteq software\subseteq algorithm\subseteq model_{mathematical}\subseteq model_{conceptual}\subseteq system$$
+
+where the $\subseteq$ indicates that the element on the left is a subset of the element on the right.
+
+#### Machine Learning {-}
+
+The distinctive characteristic of machine learning compared to other algorithms in the domain of AI, is that machine learning algorithms can build a mathematical model based on the data, without the need for explicit programming or *a priori*, explicit, feature selection.^[@hamonRobustnessExplainabilityArtificial2020 10] The idea is that machines learn models by iteratively improving the parameters of a model that optimises a certain function. Because these models are data driven, there is little domain knowledge involved and contrary to model driven methodologies, there is little explicit representation of domain knowledge by, or as understood by, domain experts.^[@hamonRobustnessExplainabilityArtificial2020 12-13]
+
+It is important to make the conceptual distinction between the algorithms that are used to calculate the parameters and the (mathematical) model consisting of the parameters themselves. Whereas the first is readily understandable given that it is explicitly coded in a human readable programming language, the latter consists of a large graph with many nodes each having a distinct numeric value, which is not a representation suited for a meaningful interpretation by humans.^[@hamonRobustnessExplainabilityArtificial2020 10] The former is the programming code whereas the latter is the result of training the model.
+
+#### SiMD and SaMD {-}
+
+The two categories of medical devices concerning software are SiMD and SaMD. This is the case both when considering the FDA's regulation of medical devices[@sternRegulatoryOversightCausal2019a] and the EU medical devices regulatory framework. A SiMD is a medical device in which software is part of the hardware medical device, or **embedded software**. A SaMD is medical devices in and of itself, so-called **stand alone software**, which is defined by the IMDRF as: '*software intended to be used for one or more medical purposes that perform these purposes without being part of a hardware medical device*'.[^5] This is in line with distinction that the Medical Device Regulation makes between '*devices that incorporate software*' (describing SiMD) and '*software that are devices in themselves*' (which describes SaMD).^[Annex I, 17 & 23(ab) @REGULATIONEU2017a]
+
+The concept of SaMD is helpful to the degree that it allows to sidestep the question of linking software to a hardware medical device for the cases where the software on its own has an intended medical purpose. This prevents the difficulty of determining whether a device is within the scope of the Regulation in case its workings depend on software but where the computation is done on commodity hardware and not on what is traditionally seen as the 'medical device'.
+
+## Medical devices and software
+
+After defining software and finding that implementations of contemporary AI fall into the software category, the definitions of '*medical device*' in both the Directive and Regulation are discussed and compared. Software is part of the definition of a medical device in both the Directive and the Regulation. To indicate the differences, the parts of the definition that differ between the Directive and Regulation are underlined.
+
+### Software & medical devices under the Medical Device Directive
+
+We consider the medical device directive, including the amendment done in Directive 2007/47/EC of the European Parliament and of the Council of 5 September 2007, which defines a medical device as follows: a *'medical device means any instrument, apparatus, appliance, software,*[^6] *material or other article, whether used alone or in combination,* *[including the software intended by its manufacturer to be used specifically for diagnostic and/or therapeutic purposes and necessary for its proper application]{.ul}, intended by the manufacturer to be used for human beings for the purpose of:*
+
+-   *diagnosis, prevention, monitoring, treatment or alleviation of disease,*
+
+-   *diagnosis, monitoring, treatment, alleviation of or compensation for an injury or* *[handicap]{.ul},*
+
+-   *investigation, replacement or modification of the anatomy or of a physiological process,*
+
+-   *[control of conception]{.ul}'.*[Art 1(2)(a) @ecCOUNCILDIRECTIVE931993]
+
+From this it is clear that diagnostic and therapeutic software are within the scope of the Directive. The original directive already says that software is a medical device in the case it has an intended medical purpose. The amendment of 2007 further added that a '*medical device means any [...] software*'. In its definition, the Directive does not distinguish between standalone and embedded software for its definition of a medical device and as software in general is within the scope of the Directive, so are both sub-categories when there is an intended medical purpose. This does not mean that the distinction is irrelevant. As we will see in section \@ref(#sec:Classification-of-medical), the distinction between embedded and stand alone software does have implications for the classification of software and the corresponding regulatory requirements.
+
+Similarly, although not as explicit, the Medical Device Directive states that software can be a medical device both in its definition and in the definitions of active medical device in the Annex that '*any active medical device*', and thus software, '*used alone or in combination*' either for therapeutic or diagnostic purposes also constitutes a medical device within the scope of the Directive.^[Art 1(2)(a) & Annex IX, 1.4-1.6 @ecCOUNCILDIRECTIVE931993]
+
+The Directive states that '*Software, which drives a device or influences the use of a device, falls automatically in the same class*'.^[Annex IX, 2.3 @ecCOUNCILDIRECTIVE931993] From this we can conclude that if software is identified as being part of the functioning of a medical device, meaning that if there is a interconnect between the software and a medical device through which the software drivers or influences that device, that it should be considered as part of that medical device. If software is not part of a hardware medical device, then it can still be a medical device within the scope of the Directive as was clarified by the 2007 amendments, as stand alone software is considered an active medical device under the directive. '*Stand alone software is considered to be an active medical device*',[Annex IX, II, 1.4 @ecCOUNCILDIRECTIVE931993] clearly indicating that SaMD is within the scope of the Directive.
+
+### Software & medical devices under the Medical Device Regulation
+
+According to the medical device regulation: software can be part of a system, where *'system' means a combination of products, either packaged together or not, which are intended to be inter-connected or combined to achieve a specific medical purpose*.^[Art 2(11) @REGULATIONEU2017a]
+
+The medical device regulation contains a slightly different definition where *'medical device' means any instrument, apparatus, appliance, software,* *[implant, reagent,]{.ul}* *material or other article intended by the manufacturer to be used, alone or in combination, for human beings for one or more of the following specific medical purposes:*
+
+-   *diagnosis, prevention, monitoring,* *[prediction, prognosis]{.ul}, treatment or alleviation of disease,*
+
+-   *diagnosis, monitoring, treatment, alleviation of, or compensation for, an injury or* *[disability]{.ul},*
+
+-   *investigation, replacement or modification of the anatomy or of a physiological* *[or pathological process or state]{.ul},*
+
+-   *[providing information by means of in vitro examination of specimens derived from the human body, including organ, blood and tissue donations]{.ul}*
+
+The essential part in this definition is that '*any [...] software [...] intended by the manufacturer to be use, alone or in combination [...] for specific medical purposes'* is a medical device that falls within the scope of the Medical Device Regulation. Software in its own right qualifies as a medical device when it is specifically intended by the manufacturer for one of the medical purposes[Preamble 19 @REGULATIONEU2017a] as listed in article 2 of the Medical Device Regulation.^[Art 2 @REGULATIONEU2017a] This list of specific medical purposes essentially includes any relevant action related to disease, injury or disability, anatomy or physiological or pathological process and specimens of human biological material. This definition encompasses a broad range of products depending on whether a purpose falls within the contours of one of the listed purposes.
+
+The Regulation is applicable to both types of software as it is clarified that '[t]he qualification of software, either as a device or an accessory, is independent of the software's location or the type of interconnection between the software and a device*'.^[Preamble 19 @REGULATIONEU2017a] Taken together with the fact that both the definition of a medical device in the Directive and Regulation clearly include software, and that the regulator has made it clear that the location or type of interconnection does not impact the qualification, whether software is in or out side of the hardware of a medical device has no influence on the scope and applicability of these regulations.
+
+## Intended medical purpose of software
+
+Not all software that is used in a healthcare setting is a medical device. When software does not have a 'specific medical purpose' it is not a medical device within the meaning of the Regulation and that software does not fall within the scope of the Regulation. The preamble to the Regulation has clarified this by stating that '*software in its own right [...] intended by the manufacturer to be used for one or more of the medical purposes set out in the definition of a medical device, qualifies as a medical device, while software for general purposes, even when used in a healthcare setting, or software intended for life-style and well-being purposes is not a medical device [...]*'.^[Preamble 19 @REGULATIONEU2017a] It is clear that the legislator used the new Regulation to provide some clarification that the scope of the Regulation does not extend to software that is used in medical context, but which does not have a medical purpose.
+
+Clarifying that the 'intended medical purpose' is fundamental in identifying a medical device and that the qualification does not depend on the location of the software is prudent given that the choice of software location should not change the legal requirements for medical devices.^[See also @mdcgGuidanceClinicalEvaluation2020 7-8] The ECJ has clarified that a device is within the scope of the Medical Device Directive in the case that the manufacturer of the device intends it to be used for medical purposes.^[Para 30 @BrainProducts2012] In other words the intended purpose needs to be specifically medical.^[Para 17 @BrainProducts2012] For software there is a noteworthy difference between software with a *medical purpose* and software used in a *medical context*.^[Para 25-26 @SNITEM2017] The ECJ gives an example based on the Commissions Guidelines that software in a medical context that simply manages a digital library and does not perform an action on data that goes beyond storage, compression or simple search is not software with a medical purpose and therefore not within the scope of the medical device Regulations.^[Para 33 @SNITEM2017]
+
+Considering, among other arguments, that software can be a device in and of itself, the ECJ has clarified '*that software does not need to act directly on or in the human body to fall within the scope of the MDD'*.^[Para 28 @SNITEM2017] As such, whether the software runs on an implantable device, a computing device in proximity of the user or in the cloud is not relevant for determining whether it falls under the scope of the Medical Device Directive, an argument which is equally applicable to the Medical Device Regulation.
+
+The intended medical purpose is the fundamental distinctive element.^[See also @minssenWhenDoesStandAlone2020a] This applies to both hardware and software medical devices, although the ECJ sees that there is indication that non software has a wider scope than software has.^[Para 19 @BrainProducts2012] Regardless, the intended medical purpose is fundamental in identifying a medical device, not whether it is implemented in pure hardware, embedded software or stand alone software.

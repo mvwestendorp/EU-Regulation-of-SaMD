@@ -1,0 +1,58 @@
+
+# Requirements for the different classes of software
+
+The Regulation leads to a higher classification for standalone software compared to the Directive. Therefore, it is important to assess the consequences of a higher classification for medical device software under the Medical Device Regulation. The assessment is subdivided in an analysis of the required certificates per class, the general requirements that are relevant for software, and (in section [5](#sec:Certificates-in-the){reference-type="ref" reference="5"}) the requirements for each certificate.[^14]
+
+## Requirements per class
+
+The different procedures and requirements for the different classes of medical devices are in different Annexes in the Directive and the Regulation. As discussed above, medical devices are classified into one of 4 classes: class I, IIa, IIb and III.^[Art 51(1) @REGULATIONEU2017a] The Annexes that are applicable per class are given in article 52 of the Regulation, see table [1](#tab:Annexes-per-class){reference-type="ref" reference="tab:Annexes-per-class"}.^[Art 52 @REGULATIONEU2017a]
+
+::: {#tab:Annexes-per-class}
+  Class   Directive   Regulation
+  ------- ----------- ------------
+     I       11(5)       52(7)
+    IIa      11(2)       52(6)
+    IIb      11(3)       52(4)
+    III      11(1)       52(3)
+
+: Articles indicating the Annexes per class of medical device[tab:Annexes-per-class]{#tab:Annexes-per-class label="tab:Annexes-per-class"}
+:::
+
+Considering that the relevant annexes contain long lists of requirements where it is not immediately clear to which class these apply, we will first consider the necessary declaration or certificates for each class. While these certificates need to be issued before a medical device can go to market, higher classed devices require ongoing oversight on the compliance of the manufacturer and products with the certificates that were issued, which is discussed in conjunction with those specific certificates.
+
+### Class I
+
+The requirements for the technical documentation are given in Annex II and Annex III indicate that the post-marketing surveillance is documented by the manufacturer. All Medical devices need to comply with both of these Annexes.^[Art 10, Annex II, Annex III @REGULATIONEU2017a] The requirements for class I devices can be met by a manufacturer without the need for involving an external party. It requires a declaration of conformity made by the manufacturer in which it declares that it has a technical documentation and quality management system, which are compliant with the requirements in the Regulation.^[Art 52 (7) jo. art 19, Annex IV @REGULATIONEU2017a] For sterile devices that are a subcategory of class I devices there is an assessment of the compliance with the Regulation by a notified body, which leads to a certificate as a basis for market access.
+
+### Class IIa
+
+Devices of class IIa and higher require a certificate in addition to the declaration of conformity.^[Art 10(6) @REGULATIONEU2017a] Notified bodies issue these certificates for which Annex XII contains the general requirements and minimum content.^[Annex XII @REGULATIONEU2017a] For devices in class IIa there are two options for obtaining a certificate of conformity.^[Art 52(6) @REGULATIONEU2017a] The first option requires a technical document assessment certificate (TD-certificate)[Art 52(6) jo. Annex IX, section 4, 4.9 @REGULATIONEU2017a] and a quality management system certificate (QMS-certificate).^[Annex IX, chapter I, 2.3 @REGULATIONEU2017a] The second option is a quality assurance certificate (QA-certificate)[^15] or a product verification certificate (PV-certificate).[^16] In addition, the second option requires the presence of the technical documentation (TD-certificate) and quality management system certificate (QMS-certificate) as prescribed by those respective certificates.
+
+### Class IIb-III
+
+Class IIb and III devices require a different mix of certificates compared to class IIa devices. Like class IIa, manufactures have a choice between two options for obtaining a certificate of conformity for class IIb and III devices.^[Art 52(4) & 52(3) @REGULATIONEU2017a respectively.] The first option is a EU quality management system certificate (QMS-certificate)[Annex IX, chapter I, 2.3 @REGULATIONEU2017a] and an EU technical documentation assessment certificate (TD-certificate).^[Annex IX, chapter II, 4 @REGULATIONEU2017a] The second option is an EU type-examination certificate (TE-certificate)[Annex X @REGULATIONEU2017a] in combination with either an EU quality assurance certificate (QA-certificate)[Annex XI, part A, 6.3 @REGULATIONEU2017a] or an EU product verification certificate (PV-certificate).^[Annex XI, part B, 15.2 @REGULATIONEU2017a]
+
+         Documentation   Design / Production   Product
+  ----- --------------- --------------------- --------- ------- -------
+    I     declaration        declaration
+IIa      TD^1,2^           QMS^1,2^          TE^2^    QA^2^
+IIb      TD^1,2^           QMS^1,2^          TE^2^    QA^2^
+III      TD^1,2^           QMS^1,2^         TE^2,3^   QA^2^   PV^3^
+
+: Certificate per class
+
+## General safety and performance requirements (GSPR) {#subsec:GSPR label="subsec:GSPR"}
+
+Given the objective of the Regulation to ensure that patients have access to safe and performant devices, all devices must meet the general safety and performance requirements (GSPR) in Annex I,[Art 5(2) @REGULATIONEU2017a] including software. The GSPR state that *'Devices shall achieve the performance intended by their manufacturer and shall be designed and manufactured in such a way that, during normal conditions of use, they are suitable for their intended purpose*'.^[Annex I, Chapter 1, 1 @REGULATIONEU2017a] The GSPR aim to reduce risks as far as possible without adversely affecting the benefit-risk ratio.^[Annex I, Chapter 1, 2 @REGULATIONEU2017a] The requirements in the GSPR concern the documentation, risk management system, design, manufacturing and the information to be supplied with the device.^[Annex I @REGULATIONEU2017a] As these are general requirements, the different certificates discussed in section [5](#sec:Certificates-in-the){reference-type="ref" reference="5"} contain more detailed and comprehensive requirements.
+
+### Safety and performance of software
+
+The (clinical) performance of software is the ability of a device to achieve its intended purpose.^[Art 2 (12), 2 (22) & 2 (52) @REGULATIONEU2017a] [Art 2 (12) @REGULATIONEU2017a] To establish the performance of a device there needs to be sufficient clinical evidence of whether the device is safe and its performance towards achieving the intended purpose.^[Art 2 (53) @REGULATIONEU2017a] For software this means that it needs to be properly designed, with specifically considering that it has a proper connection system and sufficient interoperability.^[Annex I, 14.1, 14.2 & 14.5 @REGULATIONEU2017a] Software must be designed taking into account specific features of the platform and external factors related to its use.^[Annex I, 17.3 @REGULATIONEU2017a] The software should reduce risk by design as much as reasonably possible. This includes that the IT environment in which the software operates must allow its proper functioning.^[Annex I, 14.2(d) @REGULATIONEU2017a] The IT environment includes the hardware, network and security that are used.^[Annex I, 17.4 @REGULATIONEU2017a] When designing a device the manufacturer should take the technical knowledge of the user into account, including this as part of its validation process.
+
+Software that performs a diagnostic or measuring function must be designed and verified to have sufficient accuracy, precision and stability by using the appropriate scientific and technical methods.^[Annex I, 15.1 @REGULATIONEU2017a] The design, verification and validation are aimed at eliminating or at least reduce risks related to use error.^[Annex I, 5 @REGULATIONEU2017a] In addition, the risk of side-effects needs to be minimised, which for software means reducing bugs as much as possible.^[Annex I, 8 @REGULATIONEU2017a] From this it follows that the risk of applying software or AI outside of their intended use case should be prevented by design. As such there needs to be a system in place to assess the quality of the device on these aspects.
+
+### Quality management for software
+
+There must be a quality management system that provides guarantees that the software is '*designed to ensure repeatability, reliability and performance in line with their intended use*'.^[Annex I, 17.1 @REGULATIONEU2017a] These quality management processes are very important in in software development for obtaining the desired repeatability, reliability and performance. As such, quality is a combination of these three aspects. Looking at performance there are different performance metrics, the choice of an appropriate measure is very important. The MDCG has divided the performance into different categories. The technical or analytical performance is based on evidence generated during verification and validation (part of GMP) or by new evidence through new data(sources).^[@mdcgGuidanceClinicalEvaluation2020] The clinical performance, in essence some descriptive statistics coming from either prospective or retrospective studies depending on the context.^[@mdcgGuidanceClinicalEvaluation2020]
+
+Therefore, the Regulation's general requirements concerning risk management and risk control measures are very relevant for software.^[Annex I, 3-4 @REGULATIONEU2017a] Specific requirements for software are that it is developed and manufactured according to the state of the art concerning principles of development life cycle, risk management, verification and validation.^[Annex I, 17.2 @REGULATIONEU2017a] The first two are quite self explanatory, but the verification and validation require some further detailing in the context of software. Given that it is an explicit requirement for the TD-certificate, the verification and validation are further discussed there.

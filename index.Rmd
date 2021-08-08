@@ -1,0 +1,30 @@
+---
+title: "The regulation of medical devices involving software in the EU"
+author: "Mathijs van Westendorp"
+date: "`r Sys.Date()`"
+documentclass: scrartcl
+bibliography: [PhD.bib]
+csl: oscola.csl
+link-citations: yes
+keywords:
+- Artificial Intelligence
+- Medical Device Regulation
+- MDCG
+- Risk classification
+- SAMD
+- Medical Software
+---
+
+# Abstract {-}
+
+Software and AI play an increasingly important role in medical devices. The evolution in AI has already led to regulatory change in other sectors and there are claims that further changes are to follow. Therefore, we look into the current regulatory requirements in the EU for medical devices that include software and AI.
+
+We observe that the classification of software is not fully based on the benefit-risk. The choice of implementation influences the classification regardless of benefit-risk under both the Directive and the Regulation albeit in different ways.
+
+New versions of software and AI can be released in faster succession. Therefor, we consider the equivalency procedure for these devices.
+
+At this time there does not seem an immediate need to change the Regulation itself. We reason that the critical criterion is the validation of devices including AI. While this may require further detailing, these specific requirements for AI could be set through a Common Specification. This would have to provide specification on the required standards of safe design, data sharing, interpretability, verification and validation.
+
+The concerns of robustness and interpretability of AI require further developments before it can be validated for complex medical applications and approved as a medical device.
+
+**Artificial Intelligence, Medical Device Regulation, MDCG, Risk classification, SAMD, Medical Software**
