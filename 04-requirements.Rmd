@@ -35,9 +35,9 @@ Class IIb and III devices require a different mix of certificates compared to cl
          Documentation   Design / Production   Product
   ----- --------------- --------------------- --------- ------- -------
     I     declaration        declaration
-IIa      TD^1,2^           QMS^1,2^          TE^2^    QA^2^
-IIb      TD^1,2^           QMS^1,2^          TE^2^    QA^2^
-III      TD^1,2^           QMS^1,2^         TE^2,3^   QA^2^   PV^3^
+    IIa      TD^1,2^           QMS^1,2^          TE^2^    QA^2^
+    IIb      TD^1,2^           QMS^1,2^          TE^2^    QA^2^
+    III      TD^1,2^           QMS^1,2^         TE^2,3^   QA^2^   PV^3^
 
 : Certificate per class
 
